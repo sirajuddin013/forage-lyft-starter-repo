@@ -1,5 +1,4 @@
 from abc import ABC
-
 from car import Car
 
 
@@ -11,3 +10,7 @@ class CapuletEngine(Car, ABC):
 
     def engine_should_be_serviced(self):
         return self.current_mileage - self.last_service_mileage > 30000
+    
+    def to_string(self):
+        return "CapsuletEngine"
+ 
